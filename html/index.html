@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>POSシステム</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light" style="background-color:#FF008C">
+            <a href="#" class="navbar-brand" style="color:white"><b>POSシステム</b></a>
+        </nav>
+        <div class="mt-4 card">
+            <h2 class="card-title">ログイン</h2>
+            <div class="card-body">
+                <input id ="employee_no" type="loin" name="loin" placeholder="従業員番号を入力">
+                <input id ="login_btn" type="button" class="btn btn-primary"  name="submit" value="ログイン">
+            </div>
+        </div>
+            <div id="control_panel">
+                <div class="mt-4 card">
+                    <h2 class="card-title">オーダー登録</h2>
+                    <div class="card-body">
+                        <p></p>
+                        <input id ="item_code" type="text" placeholder="商品コードを入力(例:001)" >
+                        <input id ="amount" type="text" placeholder="個数を入力(例:1)" >
+                        <button id="add_order_btn" class="btn btn-primary" > 登録</button>
+                        <button id="clear_order_btn" class="btn btn-danger" > オールクリア</button>
+                    </div>
+                    <div class="w-100 h- m-3" style="height: 300px">
+                        <textarea id="order_list" class="w-75 h-100">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="mt-4 card">
+                    <h2 class="card-title">会計</h2>
+                    <div class="card-body">
+                        <p></p>
+                        <input id="deposit_money" type="text" placeholder="お預かり金額を入力" >
+                        <button id="checkout_btn" class="btn btn-success"  name="button">会計</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
